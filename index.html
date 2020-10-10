@@ -10,10 +10,11 @@
 </body>
 </html>
 
-<script src="p5.min.js"></script>
+<script src="libs/p5.min.js"></script>
+<script src="libs/jquery.min.js"></script>
 <script>
     function setup() {
-        $.getJSON("aidana.json", function(json) {
+        $.getJSON("jsons/aidana.json", function(json) {
             console.log(json); // this will show the info it in firebug console
         });
 
@@ -21,7 +22,5 @@
         createCanvas(720, 400);
         background(0);
         noSmooth();
-
-        
     }
 </script>
