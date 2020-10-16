@@ -15,7 +15,8 @@
 <script>
     function setup() {
         $.getJSON("jsons/aidana.json", function(json) {
-            console.log(json); // this will show the info it in firebug console
+            console.log(json[0]); // this will show the info it in firebug console
+            
         });
 
         // Sets the screen to be 720 pixels wide and 400 pixels high
